@@ -152,6 +152,7 @@ fn main() {
         .allowlist_var(r"randombytes.*")
         .header("vendor/src/libsodium/include/sodium.h")
         .parse_callbacks(Box::new(bindgen::CargoCallbacks))
+        .size_t_is_usize(true)
         .generate()
         .expect("Unable to generate sodium bindings");
 
