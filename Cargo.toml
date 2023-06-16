@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2021"
 links = "sodium"
 build = "build.rs"
+license = "MIT"
 
 [dependencies]
 
